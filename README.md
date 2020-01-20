@@ -10,4 +10,4 @@ The next figure shows a peak look into MNIST dataset:
 ![Image of Yaktocat](https://cdn-images-1.medium.com/max/800/0*At0wJRULTXvyA3EK.png)  
   
 ### - Specifications:  
-x
+The dataset contains more than 60K images for hand-written digits. Each image is in shape of __(784, 1)__, in this case, we must reshape the image into ```(28, 28)``` shape.
