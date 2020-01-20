@@ -10,4 +10,43 @@ The next figure shows a peak look into MNIST dataset:
 ![Image of Yaktocat](https://cdn-images-1.medium.com/max/800/0*At0wJRULTXvyA3EK.png)  
   
 ### - Specifications:  
-The dataset contains more than 60K images for hand-written digits. Each image is in shape of __(784, 1)__, in this case, we must reshape the image into ```(28, 28)``` shape.
+The dataset contains more than 60K images for hand-written digits. Each image is in shape of ```(784, 1)```, in this case, we must reshape the image into ```(28, 28)``` shape to treat it as an image. The dataset is already splitted into **Train, Test, Validation**.  
+  
+### - Work:  
+Let's start by looking at what my neural network looks like:  
+  
+##### - Convolutional Neural Network:  
+  
+```
+print(new_model.summary())
+```  
+```
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_5 (Conv2D)            (None, 28, 28, 16)        416       
+_________________________________________________________________
+activation_9 (Activation)    (None, 28, 28, 16)        0         
+_________________________________________________________________
+max_pooling2d_3 (MaxPooling2 (None, 5, 5, 16)          0         
+_________________________________________________________________
+conv2d_6 (Conv2D)            (None, 1, 1, 32)          12832     
+_________________________________________________________________
+activation_10 (Activation)   (None, 1, 1, 32)          0         
+_________________________________________________________________
+dropout_5 (Dropout)          (None, 1, 1, 32)          0         
+_________________________________________________________________
+flatten_3 (Flatten)          (None, 32)                0         
+_________________________________________________________________
+dense_5 (Dense)              (None, 512)               16896     
+_________________________________________________________________
+activation_11 (Activation)   (None, 512)               0         
+_________________________________________________________________
+dropout_6 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+dense_6 (Dense)              (None, 10)                5130      
+_________________________________________________________________
+activation_12 (Activation)   (None, 10)                0         
+=================================================================
+```  
+x
