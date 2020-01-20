@@ -72,4 +72,5 @@ Loss: 5.1526%
   
 ![Output](https://i.ibb.co/Lnnd7LJ/download.png)
 <hr>  
+  
 > Suhaib Irsheidat
