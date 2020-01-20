@@ -15,7 +15,7 @@ The dataset contains more than 60K images for hand-written digits. Each image is
 ### - Work:  
 Let's start by looking at what my neural network looks like:  
   
-### - Convolutional Neural Network architecture:  
+### -- Convolutional Neural Network architecture:  
   
 ```python
 print(new_model.summary())
@@ -49,4 +49,21 @@ _________________________________________________________________
 activation_12 (Activation)   (None, 10)                0         
 =================================================================
 ```  
-x
+### -- Evaluation over validation set:  
+  
+```python
+print('='*50)
+print('>> Evaluate on validation data: (WHICH NEVER SEEN)')
+results = new_model.evaluate(X_valid, Y_valid, batch_size=128)
+print('Accuracy: %0.4f%%' % (results[1]*100))
+print('Loss: %0.4f%%' % (results[0]*100))
+print('='*50)
+```
+```
+==================================================
+>> Evaluate on validation data: (WHICH NEVER SEEN)
+5000/5000 [==============================] - 1s 295us/step
+Accuracy: 98.6200%
+Loss: 5.1526%
+==================================================
+```
