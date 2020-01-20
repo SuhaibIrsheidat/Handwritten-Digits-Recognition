@@ -68,6 +68,6 @@ Loss: 5.1526%
 ==================================================
 ```
   
-### -- Here are some predictions of images that __NEVER SEEN BY NEURAL NETWORK__:  
+### -- Here are some predictions of images that *NEVER SEEN BY NEURAL NETWORK*:  
   
-![Output](https://ibb.co/KFFxvML)
+![Output](https://i.ibb.co/Lnnd7LJ/download.png)
