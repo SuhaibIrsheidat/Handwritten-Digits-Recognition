@@ -15,9 +15,9 @@ The dataset contains more than 60K images for hand-written digits. Each image is
 ### - Work:  
 Let's start by looking at what my neural network looks like:  
   
-##### - Convolutional Neural Network:  
+### - Convolutional Neural Network architecture:  
   
-```
+```python
 print(new_model.summary())
 ```  
 ```
