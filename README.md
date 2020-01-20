@@ -13,7 +13,6 @@ The next figure shows a peak look into MNIST dataset:
 The dataset contains more than 60K images for hand-written digits. Each image is in shape of ```(784, 1)```, in this case, we must reshape the image into ```(28, 28)``` shape to treat it as an image. The dataset is already splitted into **Train, Test, Validation**.  
   
 ### - Work:  
-Let's start by looking at what my neural network looks like:  
   
 ### -- Convolutional Neural Network architecture:  
   
@@ -49,6 +48,7 @@ _________________________________________________________________
 activation_12 (Activation)   (None, 10)                0         
 =================================================================
 ```  
+  
 ### -- Evaluation over validation set:  
   
 ```python
@@ -67,3 +67,7 @@ Accuracy: 98.6200%
 Loss: 5.1526%
 ==================================================
 ```
+  
+### -- Here are some predictions of images that __NEVER SEEN BY NEURAL NETWORK__:  
+  
+![Output](https://ibb.co/KFFxvML)
