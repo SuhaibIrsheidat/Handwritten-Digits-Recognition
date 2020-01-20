@@ -10,13 +10,13 @@ The next figure shows a peak look into MNIST dataset:
   
 ![Image of Yaktocat](https://cdn-images-1.medium.com/max/800/0*At0wJRULTXvyA3EK.png)  
   
+<hr>  
+  
 ### - Specifications:  
 The dataset contains more than 60K images for hand-written digits. Each image is in shape of ```(784, 1)```, in this case, we must reshape the image into ```(28, 28)``` shape to treat it as an image. The dataset is already splitted into **Train, Test, Validation**.  
 <hr>  
   
-### - Work:   
-  
-### -- Convolutional Neural Network architecture:  
+### - Convolutional Neural Network architecture:  
   
 ```python
 print(new_model.summary())
@@ -52,7 +52,7 @@ activation_12 (Activation)   (None, 10)                0
 ```  
 <hr>  
   
-### -- Evaluation over validation set:  
+### - Evaluation over validation set:  
   
 ```python
 print('='*50)
@@ -72,7 +72,7 @@ Loss: 5.1526%
 ```
 <hr>  
   
-### -- Here are some predictions of images that *NEVER SEEN BY NEURAL NETWORK*:  
+### - Here are some predictions of images that *NEVER SEEN BY NEURAL NETWORK*:  
   
 ![Output](https://i.ibb.co/Lnnd7LJ/download.png)
 <hr>  
